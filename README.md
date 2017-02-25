@@ -13,7 +13,7 @@ Instructions:
 * Create a Security Profile, create a new API key with your new Bundle Identifier under iOS Settings. Write down your Key. 
 * Modify the value of APPLICATION_TYPE_ID under "Settings.swift" to use your Application Type ID. 
 * Modify the value of APIKey under "info.plist" to use your API key.
-* Modify the entries under "info.plist" -> URL types, replace URL Schemes -> Item 0 and URL identifier with your Bundle Identifier.
+* Modify the entries under "info.plist" -> URL types, replace URL Schemes -> Item 0 with your Bundler identifier and the URL identifier with "amzn-" followed by your Bundler identifier. See https://developer.amazon.com/public/apis/engage/login-with-amazon/docs/create_ios_project.html for an example.
 * To change parameters such as [ASR Profile](https://developer.amazon.com/public/solutions/alexa/alexa-voice-service/reference/speechrecognizer#profiles), modify the value of AUDIO_EVENT_DATA under "AlexaVoiceServiceClient.swift".
 
 Demo 1 - Ping
